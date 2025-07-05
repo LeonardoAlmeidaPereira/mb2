@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    tools:context=".AboutActivity">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:contentDescription="Ícone do App" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Meu App de Playlists"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Desenvolvido por: Leonardo Almeida Pereira"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Projeto para a disciplina de Desenvolvimento Mobile II"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:lineSpacingExtra="4dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Inicialmente, o projeto consumiria a API aberta do Spotify. Durante o desenvolvimento, optei por integrar este front-end com uma API própria, desenvolvida na disciplina de Servicos Web, para criar um projeto full-stack completo e aplicar os conhecimentos de ambas as matérias."
+        android:textAlignment="center" />
+
+</LinearLayout>

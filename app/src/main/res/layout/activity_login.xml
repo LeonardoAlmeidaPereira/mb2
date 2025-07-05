@@ -61,4 +61,11 @@
         android:layout_marginTop="24dp"
         android:textColor="?attr/colorPrimary"/>
 
+    <TextView
+        android:id="@+id/textViewGoToAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sobre o App"
+        android:layout_marginTop="16dp"
+        android:textSize="12sp" />
 </LinearLayout>

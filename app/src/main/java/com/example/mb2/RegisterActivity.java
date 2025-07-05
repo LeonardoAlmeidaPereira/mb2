@@ -1,7 +1,9 @@
 package com.example.mb2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,6 +35,12 @@ public class RegisterActivity extends AppCompatActivity {
 
         buttonRegister.setOnClickListener(v -> {
             registerUser();
+        });
+
+        TextView textViewGoToAbout = findViewById(R.id.textViewGoToAbout);
+        textViewGoToAbout.setOnClickListener(v -> {
+            Intent intent = new Intent(RegisterActivity.this, AboutActivity.class);
+            startActivity(intent);
         });
     }
 

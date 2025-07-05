@@ -44,6 +44,12 @@ public class LoginActivity extends AppCompatActivity {
         buttonLogin.setOnClickListener(v -> {
             loginUser();
         });
+
+        TextView textViewGoToAbout = findViewById(R.id.textViewGoToAbout);
+        textViewGoToAbout.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginActivity.this, AboutActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void loginUser() {
