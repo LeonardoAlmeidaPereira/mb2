@@ -1,4 +1,4 @@
-package com.example.mb2.api; // ou .db, ou .dao
+package com.example.mb2.api; 
 
 import android.content.Context;
 
