@@ -4,17 +4,15 @@ import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "favorite_playlists") // Define o nome da tabela
+@Entity(tableName = "favorite_playlists") 
 public class PlaylistEntity {
 
-    @PrimaryKey // Marca o 'id' como a chave primária da tabela
-    @NonNull // Garante que o ID nunca será nulo
+    @PrimaryKey 
+    @NonNull 
     private String id;
 
     private String name;
     private String description;
-
-    // Getters e Setters (pressione Alt+Insert para gerar)
 
     @NonNull
     public String getId() {
