@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mb2.adapter.PlaylistAdapter; // Vamos reutilizar o mesmo adapter!
+import com.example.mb2.adapter.PlaylistAdapter;
 import com.example.mb2.api.AppDatabase;
 import com.example.mb2.api.PlaylistDao;
 import com.example.mb2.model.Playlist;
@@ -70,7 +70,6 @@ public class FavoritesActivity extends AppCompatActivity implements PlaylistAdap
 
     @Override
     public void onItemClick(int position) {
-        // Esta lógica é idêntica à da MainActivity
         Intent detailIntent = new Intent(this, DetailActivity.class);
         Playlist clickedPlaylist = favoritePlaylistList.get(position);
         detailIntent.putExtra("EXTRA_PLAYLIST", clickedPlaylist);
