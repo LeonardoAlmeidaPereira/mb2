@@ -1,4 +1,4 @@
-package com.example.mb2.api; // ou .db, ou .dao
+package com.example.mb2.api;
 
 import androidx.room.Dao;
 import androidx.room.Delete;
